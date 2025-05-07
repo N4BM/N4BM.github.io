@@ -1,6 +1,6 @@
 ---
 title: "Engineering Runtime Obfuscation: Staying Invisible After Execution"
-date: 2025-05-07 13:00:00 +0000
+date: 2025-02-13 13:00:00 +0000
 author: N4BM
 categories:
   - Defenders
@@ -15,7 +15,7 @@ tags:
   - defenders teaming
 image:
   path: /assets/img/runtime-obfuscation-cover.png
-  alt: "Runtime obfuscation Windows Defender evasion"
+  alt: "obfuscation"
 ---
 
 In modern cybersecurity operations, defenders must understand offensive evasion techniques in depth to craft robust detection strategies. Each section below explains a key runtime obfuscation method, shows an attacker’s implementation, and then dives deeply into how defenders can detect, analyze, and build resilient alerts.
@@ -151,7 +151,6 @@ Attackers add random delays, sandbox checks, and anti-debugging to reduce detect
 
 ## 8. Trade-Offs and Risk Management
 
-![Risk table](/assets/img/obftable1.png)
 
 | Technique                | Detects                         | Complexity | Risk Level |
 |--------------------------|---------------------------------|------------|------------|
