@@ -148,13 +148,9 @@ Defenders teams validate their defenses using realistic offensive emulations:
 - Conduct continuous adversarial simulations to identify defensive gaps.
 
 ## Evasion Trade-Offs and Risk Management
-| Technique                | Detects                         | Complexity | Risk Level |
-|--------------------------|---------------------------------|------------|------------|
-| XOR Strings              | Static string matching          | Low        | Low        |
-| Dynamic APIs             | Static import tables            | Medium     | Medium     |
-| Memory Payload Encryption| Memory scans                    | Medium     | Medium     |
-| Control Flow Flattening  | Static code analysis            | High       | High       |
-| Indirect Syscalls        | API Hooks (EDR bypass)          | High       | Very High  |
+image:
+  path: /assets/img/obftable1.png
+  alt: Risk table
 
 Risk management is critical: defenders teams should balance offensive realism with defensive maturity, continually assessing and adapting their security posture.
 
