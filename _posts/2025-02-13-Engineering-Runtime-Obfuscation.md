@@ -1,11 +1,9 @@
 ---
-title: "Engineering Runtime Obfuscation: Staying Invisible After Execution"
+title: "Runtime Obfuscation Decoded: How Modern Defenders Stay Ahead"
 date: 2025-02-13 13:00:00 +0000
 author: n4bm
 categories:
   - Defenders
-  - Red Team
-  - Blue Team
   - Evasion
 tags:
   - obfuscation
