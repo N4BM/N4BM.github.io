@@ -1,7 +1,7 @@
 ---
 title: "Engineering Runtime Obfuscation: Staying Invisible After Execution"
 date: 2025-02-13 13:00:00 +0000
-author: N4BM
+author: n4bm
 categories:
   - Defenders
   - Red Team
