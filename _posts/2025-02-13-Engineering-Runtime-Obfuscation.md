@@ -169,4 +169,3 @@ Balance detection depth with resource constraints—prioritize high-risk techniq
 
 By layering these detection strategies, defenders can significantly raise the bar for runtime obfuscation attackers. Continuous validation, telemetry tuning, and proactive threat emulation ensure robust operational security.
 
-Follow me on [GitHub](https://github.com/n4bm) and [LinkedIn](https://linkedin.com/in/n4bm) for more advanced insights.
