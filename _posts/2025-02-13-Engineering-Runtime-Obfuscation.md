@@ -3,14 +3,14 @@
 title: Engineering Runtime Obfuscation: Staying Invisible After Execution
 date: 2025-05-07 13:00:00 +0000
 author: N4BM
-categories: [Purple Team, Red Team, Blue Team, Evasion]
-tags: [obfuscation, windows defender, runtime, implants, purple teaming]
+categories: [Defenders Team, Red Team, Blue Team, Evasion]
+tags: [obfuscation, windows defender, runtime, implants, defenders teaming]
 image:
   path: /assets/img/runtime-obfuscation-cover.png
   alt: Runtime obfuscation Windows Defender evasion
 ---
 
-In today's cybersecurity landscape, purple teams blend offensive and defensive strategies to strengthen overall security postures. Runtime obfuscation techniques play a critical role in this ecosystem, demonstrating not only how adversaries evade detection but also how defenders can enhance detection capabilities. This article examines detailed runtime obfuscation techniques, providing both offensive implementations and defensive countermeasures, along with practical examples in C++.
+In today's cybersecurity landscape, defenders teams blend offensive and defensive strategies to strengthen overall security postures. Runtime obfuscation techniques play a critical role in this ecosystem, demonstrating not only how adversaries evade detection but also how defenders can enhance detection capabilities. This article examines detailed runtime obfuscation techniques, providing both offensive implementations and defensive countermeasures, along with practical examples in C++.
 
 ---
 
@@ -29,7 +29,7 @@ In today's cybersecurity landscape, purple teams blend offensive and defensive s
 
 ## String Obfuscation and Decryption
 
-Adversaries often obfuscate sensitive strings to evade signature-based detections by EDRs and antivirus solutions. Purple teams use this knowledge to detect anomalies in memory behavior and decrypted runtime operations.
+Adversaries often obfuscate sensitive strings to evade signature-based detections by EDRs and antivirus solutions. Defenders teams use this knowledge to detect anomalies in memory behavior and decrypted runtime operations.
 
 ### Offensive Technique
 ```cpp
@@ -131,7 +131,7 @@ Attackers bypass EDR hooks using indirect syscalls. Defenders can detect syscall
 
 ## Operational Security (OPSEC) Considerations
 
-From a purple team perspective, understanding OPSEC helps anticipate attacker methodologies and strengthen defenses.
+From a defenders team perspective, understanding OPSEC helps anticipate attacker methodologies and strengthen defenses.
 
 ### Offensive Strategies
 - Introduce delays and jitter to evade behavioral detection.
@@ -143,7 +143,7 @@ From a purple team perspective, understanding OPSEC helps anticipate attacker me
 
 ## Detection Logic and Evasion Validation
 
-Purple teams validate their defenses using realistic offensive emulations:
+Defenders teams validate their defenses using realistic offensive emulations:
 - Employ tools like DefenderCheck, PE-sieve, and Process Hacker to understand detection capabilities.
 - Conduct continuous adversarial simulations to identify defensive gaps.
 
@@ -156,11 +156,11 @@ Purple teams validate their defenses using realistic offensive emulations:
 | Control Flow Flattening  | Static code analysis            | High       | High       |
 | Indirect Syscalls        | API Hooks (EDR bypass)          | High       | Very High  |
 
-Risk management is critical: purple teams should balance offensive realism with defensive maturity, continually assessing and adapting their security posture.
+Risk management is critical: defenders teams should balance offensive realism with defensive maturity, continually assessing and adapting their security posture.
 
 ---
 
 ## Conclusion
-Runtime obfuscation techniques are vital in understanding and improving cybersecurity defenses. Purple teams leverage this knowledge to proactively strengthen defensive measures while continuously validating security effectiveness against realistic threat emulation.
+Runtime obfuscation techniques are vital in understanding and improving cybersecurity defenses. Defenders teams leverage this knowledge to proactively strengthen defensive measures while continuously validating security effectiveness against realistic threat emulation.
 
-Follow my work on GitHub and connect on LinkedIn for more insights into purple team strategies and cybersecurity tradecraft.
+Follow my work on GitHub and connect on LinkedIn for more insights into defenders team strategies and cybersecurity tradecraft.
