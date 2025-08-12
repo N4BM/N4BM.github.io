@@ -245,7 +245,3 @@ event.category:authentication and user.name: "canary_svc@corp.local" and event.o
 - [ ] Drift/poisoning checks and model versioning  
 - [ ] Purple‑team simulations for slow‑and‑low, LOTL, beaconing  
 - [ ] Feedback loop: promote high‑signal features; demote noisy ones
-
-```
-
-
