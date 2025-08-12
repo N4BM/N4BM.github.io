@@ -99,7 +99,7 @@ Now, turn each move into a **countermeasure**.
 
 ---
 
-## Quick wins you can deploy this week
+## Quick wins you can deploy
 
 - **Per-user upload budget**: baseline daily egress per user; alert at 3× EWMA over a 7–14 day window.
 - **First-seen destination & process combo**: if a user/process talks to a domain never seen in org history, bump the risk score—especially from Tier-0 hosts.
@@ -109,7 +109,7 @@ Now, turn each move into a **countermeasure**.
 
 ---
 
-## A mini case study (composite of real incidents)
+## A mini case study
 
 A finance workstation began uploading small encrypted blobs to a clean-looking cloud endpoint—**only during lunch hours**, ~8 MB each time, ~1.5 GB total over three weeks. No spikes. AV clean. EDR quiet.
 
