@@ -136,7 +136,7 @@ In short: **Teach your AI to see normal—and teach your program to doubt it.**
 ### 1) Per-user upload budget (rolling baseline)
 
 **Splunk (SPL)** – 14‑day rolling average with 3× threshold:
-```spl
+```
 index=proxy OR index=fw
 | bin _time span=1d
 | stats sum(bytes_out) as bytes by user _time
@@ -155,7 +155,7 @@ index=proxy OR index=fw
 ### 2) First‑seen destination & process combo
 
 **Splunk (SPL)** – naive “first seen in 30 days” approach, then alert on today’s firsts:
-```spl
+```
 index=edr OR index=sysmon (EventCode=3 OR EventID=3) dest_domain=* process_name=*
 | eval combo=process_name."→".dest_domain
 | bin _time span=1d
@@ -177,7 +177,7 @@ Use a rule with a *Cardinality* condition (unique `process.name + destination.do
 ### 3) Service accounts: block interactive logons
 
 **Splunk (SPL)** – Windows 4624 LogonType=2 from service accounts:
-```spl
+```
 index=wineventlog sourcetype="WinEventLog:Security" EventCode=4624 LogonType=2
 | lookup service_accounts.csv account as TargetUserName OUTPUT is_service_account
 | search is_service_account=true
@@ -195,7 +195,7 @@ event.code: "4624" and winlog.event_data.LogonType: "2" and user.name: ("svc_*",
 ### 4) Rendezvous beacons (near‑periodic outbound)
 
 **Splunk (SPL)** – detect low jitter between consecutive calls:
-```spl
+```
 index=proxy dest_category!=internal dest_domain=*
 | sort 0 src_ip dest_domain _time
 | streamstats window=1 current=f last(_time) as prev by src_ip dest_domain
@@ -212,7 +212,7 @@ index=proxy dest_category!=internal dest_domain=*
 ### 5) Canary everything (files, creds, domains)
 
 **Splunk (SPL)** – canary file access on tier‑0 hosts:
-```spl
+```
 index=edr OR index=sysmon (EventID=11 OR EventCode=4663)
 FileName="*Payroll_2025_Q3.xlsx"
 | search host IN ([ | inputlookup tier0_hosts.csv | fields host ])
