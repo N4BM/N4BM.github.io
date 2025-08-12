@@ -11,7 +11,7 @@ tags:
   - blue-team
   - detection-engineering
 image:
-  path: /assets/img/ai-anomaly-detection-cover.png
+  path: /assets/img/AI-anomaly-detection-cover.png
   alt: "Anomaly Detection"
 ---
 
